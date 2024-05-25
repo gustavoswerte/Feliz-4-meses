@@ -20,20 +20,21 @@
         .container {
             text-align: center;
             background: rgba(255, 255, 255, 0.9);
-            padding: 2rem;
+            padding: 1rem;
             box-shadow: 0 0 10px rgba(0,0,0,0.1);
             border-radius: 10px;
             position: relative;
             z-index: 1;
             max-width: 90%;
+            box-sizing: border-box;
         }
         h1 {
             color: #333;
-            font-size: 1.5rem;
+            font-size: 1.2rem;
         }
         button {
-            padding: 1rem 2rem;
-            margin: 1rem;
+            padding: 0.5rem 1rem;
+            margin: 0.5rem;
             border: none;
             border-radius: 5px;
             cursor: pointer;
@@ -60,8 +61,8 @@
         }
         .cat {
             position: absolute;
-            width: 80px;
-            height: 80px;
+            width: 60px;
+            height: 60px;
             background-size: cover;
             animation: float 5s infinite;
         }
@@ -71,7 +72,7 @@
         }
         .message {
             position: absolute;
-            font-size: 1.5rem;
+            font-size: 1rem;
             color: red;
             font-weight: bold;
             animation: appearDisappear 3s infinite;
@@ -93,11 +94,11 @@
 
     <script>
         const catImages = [
-            'https://placekitten.com/80/80',
-            'https://placekitten.com/81/81',
-            'https://placekitten.com/82/82',
-            'https://placekitten.com/83/83',
-            'https://placekitten.com/84/84'
+            'https://placekitten.com/60/60',
+            'https://placekitten.com/61/61',
+            'https://placekitten.com/62/62',
+            'https://placekitten.com/63/63',
+            'https://placekitten.com/64/64'
         ];
 
         function showCats() {
